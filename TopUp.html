@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHONE TOPUP Order</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1> Mauri man BNA PHONE Credit TopUp</h1>
+    <h2>Taiaoka karina am Phone number ao imwina rinea am payment</h2>
+    <form id="topupForm">
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required /*pattern="[0-9]" >
+
+      <label for="creditAmount">Credit Amount:</label>
+      <select id="creditAmount" name="creditAmount" required>
+        <option value="">Select Credit Amount</option>
+        <option value="2-dollars">AUD $ 2.00</option>
+        <option value="5-dollars">AUD $ 5.00</option>
+        <option value="10-dollars">AUD $ 10.00</option>
+        <option value="20-dollars">AUD $ 20.00</option>
+        </select>
+
+        <!-- / -->
+      <label for="paymentType">Payment Type:</label>
+      <select id="paymentType" name="paymentType" required>
+        <option value="">Select Payment Type</option>
+        <option value="credit-card">Credit Card</option>
+        <option value="debit-card">Debit Card</option>
+        <option value="mobile-wallet">Mobile Wallet</option>
+        <option value="IB-ANZ">IB-ANZ</option>
+        <option value="cash">Cash</option>
+      </select>
+
+      <button type="submit">Order TOPUP</button>
+    </form>
+    <div id="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
